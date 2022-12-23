@@ -1,0 +1,14 @@
+
+Hope you enjoy your new logo, here are the people that
+made your beautiful logo happen :)
+font name: Kingthings_Exeter
+font link: http://www.kingthingsfonts.co.uk/fonts/fonts.htm
+font author: Kingthings
+font author site: http://www.kingthingsfonts.co.uk/
+
+
+icon designer: iconsmind.com
+icon designer link: /imicons
+        
+{"bg":"#161C60","icon":"#25BDD6","font":"#25BDD6","slogan":"#39d1ea"}
+      

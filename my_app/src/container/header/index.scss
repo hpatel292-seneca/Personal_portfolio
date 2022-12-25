@@ -1,3 +1,7 @@
+.main__header{
+  display: flex;
+  flex-direction: row;
+}
 .app__header-img {
   flex-direction: column;
 }
@@ -79,12 +83,12 @@
     justify-content: center;
     align-items: center;
     .app__profile {
-      width: 40vw;
+      width: 30vw;
       position: relative;
       z-index: 2;
     }
     .app__circle {
-      width: 40vw;
+      width: 30vw;
       position: absolute;
     }
 

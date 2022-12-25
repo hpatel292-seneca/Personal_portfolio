@@ -14,10 +14,11 @@ function Navbar() {
     
         
             <ul className='app__navlink'>
-              {["Home", "About", "Work", "Contact"].map((element)=> (
+              {["Home", "About", "Work","Skill", "Contact"].map((element)=> (
                 <li className='app__navlink-li' id={`${element}`} key={`${element}`}>
-                    <a href={`/${element}`} id={`link-${element}`}>{element}</a>
                     <div />
+                    <a href={`#${element}`} id={`link-${element}`}>{element}</a>
+                    
                 </li>
               ))}
             </ul>

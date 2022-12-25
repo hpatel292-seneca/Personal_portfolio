@@ -4,10 +4,11 @@ import "../../app.css"
 import {motion} from 'framer-motion'
 import { images } from '../../constant/index'
 import image from '../../constant/image'
+import AppWrap from '../../Higher_order_component/AppWapper'
 
 function Header() {
   return (
-    <div id='home' className='app__header app__flex app__container'>
+    <div  className='app__header app__flex app__container'>
         <motion.div
             className='app__header-info app__flex'
             whileInView={{x:[-100, 0], opacity:[0 ,1]}}
@@ -65,4 +66,4 @@ function Header() {
   )
 }
 
-export default Header
+export default AppWrap(Header, 'home');

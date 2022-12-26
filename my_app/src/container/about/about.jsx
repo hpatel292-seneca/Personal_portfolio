@@ -37,7 +37,7 @@ function About() {
       whileInView={{ y: [100, 0], opacity: [0, 1] }}
       transition={{ duration: 1 }}
       className="app__about app__container About"
-      id="About"
+      id="about"
     >
       <h2 className="head-text">
         I know that <span>Good Design</span>

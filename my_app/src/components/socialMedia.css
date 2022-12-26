@@ -18,5 +18,10 @@
   width: 35px;
   color: var(--gray-color);
 }
+@media screen and (max-width: 450px) {
+  .app__social {
+    display: none;
+  }
+}
 
 /*# sourceMappingURL=socialMedia.css.map */

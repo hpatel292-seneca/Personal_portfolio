@@ -18,5 +18,8 @@
             color: var(--gray-color);
         }
     }
+    @media screen and (max-width: 450px) {
+        display: none;
+    }
 }
 

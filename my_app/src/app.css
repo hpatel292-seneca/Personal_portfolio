@@ -95,6 +95,7 @@
     align-items: center;
     flex-direction: column;
     padding: 1rem;
+    left: 0;
 }
 .app__social div {
     width: 40px;
@@ -137,6 +138,9 @@
     align-items: center;
     flex-direction: column;
     padding: 1rem;
+    position: absolute;
+    right: 0 ;
+    z-index: 2;
 }
 .app__navigation .app__navigation-dot {
     width: 10px;

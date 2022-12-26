@@ -3,6 +3,8 @@ import "./index.css";
 import "../../app.css";
 import { images } from "../../constant";
 import { motion } from "framer-motion";
+// import { SocialMedia } from "../../components";
+import AppWrap from '../../Higher_order_component/AppWapper'
 const Abouts = [
   {
     title: "Front-End Developer",
@@ -17,9 +19,9 @@ const Abouts = [
     imgURL: images.about02,
   },
   {
-    title: "Full-Stack Developer",
+    title: "MERN-Stack Developer",
     description:
-      "I am a Full Stack developer. I love to design and Apply a proper working backend to that design front end.",
+      "I am a MERN Stack developer. I love to design and Apply a proper working backend to that design front end.",
     imgURL: images.about03,
   },
   {
@@ -35,6 +37,7 @@ function About() {
       whileInView={{ y: [100, 0], opacity: [0, 1] }}
       transition={{ duration: 1 }}
       className="app__about app__container About"
+      id="About"
     >
       <h2 className="head-text">
         I know that <span>Good Design</span>
@@ -64,4 +67,4 @@ function About() {
   );
 }
 
-export default About;
+export default AppWrap(About, "about");

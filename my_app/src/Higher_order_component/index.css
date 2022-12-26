@@ -1,0 +1,23 @@
+.app__HOC{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.social{
+    align-self: flex-end;
+    position:absolute;
+    z-index: 1;
+    left: 0;
+}
+
+.navigation{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    position: absolute;
+    z-index: 2;
+    right: 0;
+}

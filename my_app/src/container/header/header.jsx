@@ -5,7 +5,7 @@ import {motion} from 'framer-motion'
 import { images } from '../../constant/index'
 import image from '../../constant/image'
 import AppWrap from '../../Higher_order_component/AppWapper'
-import { NavigationDot, SocialMedia } from '../../components'
+// import { NavigationDot, SocialMedia } from '../../components'
 
 function Header() {
   return (
@@ -68,5 +68,5 @@ function Header() {
   )
 }
 
-// export default AppWrap(Header, 'home');
-export default Header;
+export default AppWrap(Header, "home");
+// export default Header;

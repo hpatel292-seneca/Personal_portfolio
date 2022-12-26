@@ -1,6 +1,6 @@
 import React from 'react'
 import {AiFillLinkedin, AiFillGithub, AiFillCodepenCircle} from "react-icons/ai"
-
+import "./socialMedia.css"
 function SocialMedia() {
   return (
     <div className="app__social">

@@ -2,6 +2,7 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
 
 import React from 'react';
+import './navigation.css'
 
 const NavigationDots = ({ active }) => (
   <div className="app__navigation">

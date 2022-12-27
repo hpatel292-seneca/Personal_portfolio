@@ -73,6 +73,7 @@ function Work() {
                   transition={{ duration: 0.25, ease: 'easeInOut', staggerChildren: 0.5 }}
                   className="app__work-hover app__flex"
                 >
+                  
                   <a href={item.github} target="_blank" rel="noreferrer">
 
                     <motion.div
@@ -81,19 +82,21 @@ function Work() {
                       transition={{ duration: 0.25 }}
                       className="app__flex"
                     >
-                      <AiFillEye />
+                      <AiFillGithub />
+                      
                     </motion.div>
                   </a>
-                  <a href={item.live_site} target="_blank" rel="noreferrer">
+                  {item.live_site && <a href={item.live_site} target="_blank" rel="noreferrer">
                     <motion.div
                       whileInView={{ scale: [0, 1] }}
                       whileHover={{ scale: [1, 0.90] }}
                       transition={{ duration: 0.25 }}
                       className="app__flex"
                     >
-                      <AiFillGithub />
+                      <AiFillEye />
                     </motion.div>
-                  </a>
+                  </a>}
+                  
                 </motion.div>
               </div>
 
@@ -102,7 +105,7 @@ function Work() {
                 <p className="p-text" style={{ marginTop: 10 }}>{item.text}</p>
 
                 <div className="app__work-tag app__flex">
-                  <p className="p-text">"Web App"</p>
+                  <p className="p-text">{item.tag}</p>
                 </div>
               </div>
             </div>

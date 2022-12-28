@@ -1,0 +1,29 @@
+#contact{
+    display: flex;
+    flex-direction: column;
+    padding: 6rem 0 2rem;
+    .app__contact-details{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 60%;
+        .app__contact-email{
+            img{
+                width: 3rem;
+            }
+            background-color: rgba(255, 192, 203, 0.322);
+            width: 30%;
+            height: 70px;
+            border-radius: 10px;
+        }
+        .app__contact-phone{
+            img{
+                width: 3rem;
+            }
+            background-color: rgba(181, 209, 228, 0.322);
+            width: 30%;
+            height: 70px;
+            border-radius: 10px;
+        }
+    }
+}

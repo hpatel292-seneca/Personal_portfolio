@@ -1,0 +1,102 @@
+#skill {
+  padding: 6rem 0 2rem;
+  background-color: white;
+}
+
+.app__skill {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+}
+.app__skill .app__skill-icons {
+  flex: 1;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 5rem;
+  padding: 3rem;
+}
+@media screen and (max-width: 550px) {
+  .app__skill .app__skill-icons {
+    padding: 0;
+  }
+}
+.app__skill .app__skill-icons .app__skills-icon {
+  width: 120px;
+  height: 120px;
+  background-color: rgba(0, 0, 0, 0.233);
+  margin: 1rem;
+  border-radius: 50%;
+}
+@media screen and (max-width: 550px) {
+  .app__skill .app__skill-icons .app__skills-icon {
+    width: 80px;
+    height: 80px;
+  }
+}
+.app__skill .app__skill-icons .app__skills-icon img {
+  width: 90px;
+  height: 90px;
+}
+@media screen and (max-width: 550px) {
+  .app__skill .app__skill-icons .app__skills-icon img {
+    width: 50px;
+    height: 50px;
+  }
+}
+.app__skill .app__skill-icons .app__skills-icon p {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.205);
+  width: inherit;
+  height: inherit;
+  border-radius: 50%;
+  font-size: xx-large;
+  color: white;
+}
+
+.app__skill-content {
+  display: flex;
+  flex-direction: row;
+}
+@media screen and (max-width: 1300px) {
+  .app__skill-content {
+    flex-direction: column;
+  }
+}
+.app__skill-content .app__skill-Education {
+  font-size: 1.5rem;
+  width: 75%;
+  margin: 3rem auto 0 auto;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: centers;
+}
+@media screen and (max-width: 1300px) {
+  .app__skill-content .app__skill-Education {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .app__skill-content .app__skill-Education {
+    width: 100%;
+  }
+}
+.app__skill-content .app__skill-Education div {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  margin: 1rem;
+}
+.app__skill-content .app__skill-Education div .year {
+  color: var(--secondary-color);
+  flex: 1;
+}
+.app__skill-content .app__skill-Education div .title-edu {
+  flex: 1.5;
+}
+
+/*# sourceMappingURL=Skills.css.map */

@@ -45,7 +45,7 @@ function Skills() {
         <motion.div
           className='app__skill-icons app__flex'
           whileInView={{y: [100, 0], opacity: [0, 1]}}
-          transition= {{duration: 1, delay: 0.9 }}
+          transition= {{duration: 0.8, delay: 0.8 }}
         >
           {icons.map((icon, index)=>(
             <motion.div key={index}

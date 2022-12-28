@@ -3,7 +3,6 @@ import "./index.css"
 import "../../app.css"
 import {motion} from 'framer-motion'
 import { images } from '../../constant/index'
-import image from '../../constant/image'
 import AppWrap from '../../Higher_order_component/AppWapper'
 // import { NavigationDot, SocialMedia } from '../../components'
 

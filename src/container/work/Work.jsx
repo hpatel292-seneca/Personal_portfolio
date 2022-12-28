@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import "../../app.css"
 import "./Work.css"
-import { images } from '../../constant/index'
 import AppWarp from '../../Higher_order_component/AppWapper'
 import { motion, useAnimationControls } from "framer-motion";
 import { AiFillEye, AiFillGithub } from 'react-icons/ai';

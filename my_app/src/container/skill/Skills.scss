@@ -1,0 +1,97 @@
+#skill{
+    padding: 6rem 0 2rem;
+    background-color: white;
+    
+}
+
+.app__skill{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    // justify-content: spa ce-between;
+    .app__skill-icons{
+        flex: 1;
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+       
+        flex-wrap: wrap;
+        margin-top: 5rem;
+        padding: 3rem;
+        @media screen and (max-width: 550px) {
+            padding: 0;
+          }
+        .app__skills-icon{
+            width: 120px;
+            height: 120px;
+            background-color: rgba(0, 0, 0, 0.233);
+            margin: 1rem;
+            border-radius: 50%;
+            @media screen and (max-width: 550px) {
+                width: 80px;
+                height: 80px;
+              }
+            img{
+                width: 90px;
+                height: 90px;
+                // position: relative;
+                @media screen and (max-width: 550px) {
+                    width: 50px;
+                    height: 50px;
+                  }
+            }
+            p{
+                position:absolute;
+                background-color: rgba(0, 0, 0, 0.205);
+                width: inherit;
+                height: inherit;
+                border-radius: 50%;
+                font-size: xx-large;
+                color: white;
+                // top: 60px;
+                // left: 60px;
+            }
+        }
+    }
+}
+.app__skill-content{
+    display: flex;
+    flex-direction: row;
+    @media screen and (max-width: 1300px) {
+        flex-direction: column;
+      }
+    .app__skill-Education{
+        font-size: 1.50rem;
+        width: 75%;
+        margin: 3rem auto 0 auto;
+        flex: 1;
+        display: flex;
+        // grid-template-columns: 1fr 3fr;
+        flex-direction: column;
+        justify-content: center;
+        align-items: centers;
+        // margin: 3rem;
+        @media screen and (max-width: 1300px) {
+            width: 50%;
+          }
+          @media screen and (max-width: 500px) {
+            width: 100%;
+          }
+        div{
+            display: flex;
+            flex-direction: row;
+            // justify-content: space-evenly;
+            width: 80%;
+            margin: 1rem;
+            .year{
+                color: var(--secondary-color);
+                flex: 1;
+            }
+            .title-edu{
+                flex: 1.5;
+                
+            }
+        }
+    }
+}

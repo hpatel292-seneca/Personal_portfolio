@@ -34,8 +34,8 @@ const Abouts = [
 function About() {
   return (
     <motion.div
-      whileInView={{ y: [100, 0], opacity: [0, 1] }}
-      transition={{ duration: 1 }}
+      whileInView={{ y: [150, 0], opacity: [0, 1] }}
+      transition={{ duration: 1.5 }}
       className="app__about app__container About"
       id="about"
     >
@@ -68,3 +68,4 @@ function About() {
 }
 
 export default AppWrap(About, "about");
+

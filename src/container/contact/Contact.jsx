@@ -26,13 +26,13 @@ function Contact() {
         >
             <h2 className='head-text'>Contact Details</h2>
             <div className='app__contact-details'>
-                <a href="mailto: abc@example.com" className="app__contact-email app__flex">
+                <a href="mailto: hpatel292@myseneca.ca" className="app__contact-email app__flex">
                     <img src={images.email} alt="email logo" />
-                    <span>Example123@gmail.com</span>
+                    <span>hpatel292@myseneca.ca</span>
                 </a>
-                <a href="tel:+1234567890" className="app__contact-phone app__flex">
+                <a href="tel:+16478623246" className="app__contact-phone app__flex">
                     <img src={images.mobile} alt="phone logo" />
-                    <span>+1234567890</span>
+                    <span>+16478623246</span>
                 </a>
             </div>
             <div className='app__form'>

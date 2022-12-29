@@ -17,7 +17,7 @@ function Navbar() {
               {["Home", "About", "Work","Skill", "Contact"].map((element)=> (
                 <li className='app__navlink-li' id={`${element}`} key={`${element}`}>
                     <div />
-                    <a href={`#${element}`} id={`link-${element}`}>{element}</a>
+                    <a href={`#${element.toLowerCase()}`} id={`link-${element}`}>{element}</a>
                     
                 </li>
               ))}

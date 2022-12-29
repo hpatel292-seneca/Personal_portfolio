@@ -1,23 +1,32 @@
-import React, { useState } from 'react'
+import React, { useState, useRef } from 'react'
 import "./contact.css"
 import "../../app.css"
 import AppWarp from '../../Higher_order_component/AppWapper'
 import { motion } from 'framer-motion'
 import { images } from '../../constant'
+import emailjs from '@emailjs/browser';
 function Contact() {
-    const [formData, setFormData] = useState({ name: '', email: '', message: '' })
-    const { username, email, message } = formData;
+    const form = useRef();
+    const [formData, setFormData] = useState({ user_name: '', user_email: '', message: '' })
+    const { user_name, user_email, message } = formData;
     const [isFormSubmitted, setIsFormSubmitted] = useState(false)
     const [loading, setLoading] = useState(false)
     const handleChangeInput = (e) => {
-        const [name, value] = e
-        setFormData({...formData, [name]: value})
+        setFormData({...formData, [e.target.name]: e.target.value})
     }
 
-    const handleSubmit = () => {
+    const handleSubmit = (e) => {
+        e.preventDefault();
         setLoading(true);
-    
-        setIsFormSubmitted(true); 
+        console.log(formData)
+        emailjs.sendForm('service_buu48ok', 'template_1px5gln', form.current, 'SqoGyeZGsT8AZ8T3u')
+      .then((result) => {
+          console.log(result.text);
+          setIsFormSubmitted(true); 
+      }, (error) => {
+          console.log(error.text);
+      });
+        
       };
     return (
         <motion.div className='app__container app__flex' id='contact'
@@ -37,15 +46,16 @@ function Contact() {
             </div>
             <div className='app__form'>
                 {!isFormSubmitted ?
-                    <>
+                    <form ref={form} onSubmit={handleSubmit}>
                         <div className='app__flex' >
-                            <input className="p-text" type="text" placeholder="Your Name" name="username" value={username} onChange={handleChangeInput} />
+                            <input required className="p-text" type="text" placeholder="Your Name" name="user_name" value={user_name} onChange={handleChangeInput} />
                         </div>
                         <div className='app__flex' >
-                            <input className="p-text" type="text" placeholder="Your Email" name="email" value={email} onChange={handleChangeInput} />
+                            <input required className="p-text" type="text" placeholder="Your Email" name="user_email" value={user_email} onChange={handleChangeInput} />
                         </div>
                         <div className='app__flex'>
                             <textarea
+                            required
                                 className="p-text textArea"
                                 placeholder="Your Message"
                                 value={message}
@@ -53,8 +63,8 @@ function Contact() {
                                 onChange={handleChangeInput}
                             />
                         </div>
-                        <button type="button" className="submit-btn p-text app__flex" onClick={handleSubmit}>{!loading ? 'Send Message' : 'Sending...'}</button>
-                    </> : (
+                        <button type="submit" className="submit-btn p-text app__flex" onClick={handleSubmit}>{!loading ? 'Send Message' : 'Sending...'}</button>
+                        </form> : (
                         <div>
                             <h3 className="head-text">
                                 Thank you for getting in touch!

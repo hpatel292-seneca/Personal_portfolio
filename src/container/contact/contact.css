@@ -2,8 +2,10 @@
   display: flex;
   flex-direction: column;
   padding: 6rem 0 2rem;
+  background-color: #edf2f8;
 }
 #contact .app__contact-details {
+  margin-top: 4rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -26,6 +28,76 @@
 }
 #contact .app__contact-details .app__contact-phone img {
   width: 3rem;
+}
+@media screen and (max-width: 850px) {
+  #contact .app__contact-details {
+    flex-direction: column;
+  }
+  #contact .app__contact-details .app__contact-email {
+    width: 50%;
+    height: 70px;
+    margin: 1rem;
+  }
+  #contact .app__contact-details .app__contact-email img {
+    width: 2rem;
+  }
+  #contact .app__contact-details .app__contact-phone {
+    width: 50%;
+    height: 70px;
+    margin: 1rem;
+  }
+  #contact .app__contact-details .app__contact-phone img {
+    width: 2rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  #contact .app__contact-details .app__contact-email {
+    width: 100%;
+    height: 70px;
+    margin: 1rem;
+  }
+  #contact .app__contact-details .app__contact-email img {
+    width: 2rem;
+  }
+  #contact .app__contact-details .app__contact-phone {
+    width: 100%;
+    height: 70px;
+    margin: 1rem;
+  }
+  #contact .app__contact-details .app__contact-phone img {
+    width: 2rem;
+  }
+}
+#contact .app__form {
+  width: 60%;
+  margin-top: 4rem;
+}
+#contact .app__form div {
+  width: 100%;
+}
+#contact .app__form div input {
+  width: 100%;
+  margin: 0.7rem;
+  height: 2.3rem;
+  padding: 0.5rem;
+  border-radius: 10px;
+  background-color: white;
+}
+#contact .app__form div .textArea {
+  width: 100%;
+  margin: 0.5rem;
+  height: 5.3rem;
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: white;
+}
+#contact .submit-btn {
+  background-color: var(--secondary-color);
+  color: white;
+  width: 10rem;
+  height: 3rem;
+  margin: 1rem auto;
+  border-radius: 10px;
 }
 
 /*# sourceMappingURL=contact.css.map */

@@ -7,29 +7,36 @@ import { motion } from "framer-motion";
 import AppWrap from '../../Higher_order_component/AppWapper'
 const Abouts = [
   {
+    title: "Who Am I?",
+    description:
+      "Hi, I'm Harshil Patel. I am a passionate designer and developer based out of Toronto, Ontario. I love creating appealing web apps that are also responsive, accessible, and logically designed to provide an optimal user experience. Aside from designing and coding, I offer a friendly, honest, respectful, creative personality and I am always looking to learn new technologies and improve with what I already know.",
+    imgURL: images.about04,
+  },
+  {
     title: "Front-End Developer",
     description:
-      "I am a front-end developer with a passion for building beautiful and functional web applications",
+      "I am a front-end developer with a passion for building beautiful and functional web applications. I love to create components and animations as it allows to engage user and it also good for user experience. I am using FramerMotion, material-ui for animation react component.",
     imgURL: images.about01,
   },
   {
-    title: "Back-End Developer",
+    title: "Open Source Developer",
     description:
-      "I am a back-end Developer with a passion for building scalable backend with node.js or flask.py",
+      "Contributing to Open Source Project is feel like actually contributing to the community. This help me to Improve Coding Skills, Gain Experience working with real software, and to develop a team work skill.",
     imgURL: images.about02,
   },
   {
-    title: "MERN-Stack Developer",
+    title: "Full Stack Developer",
     description:
-      "I am a MERN Stack developer. I love to design and Apply a proper working backend to that design front end.",
+      "I love to work on end to end on an application. My most used stack is MERN and I am good at Javascript. Working on Full stack, allow me to explore different technologies and packages that out there in market and how those packages can be used",
     imgURL: images.about03,
   },
   {
     title: "Python Developer",
     description:
-      "I am using python to make software Applications and also use its library Flask for Web development",
+      "I am using python to make software Applications and also use its library Flask for Web development. Python is very powerful and popular programming language and i found that working in python allow us to develop complex web applications with less and simple code.",
     imgURL: images.about04,
   },
+  
 ];
 function About() {
   return (
@@ -39,7 +46,7 @@ function About() {
       className="app__about app__container About"
       id="about"
     >
-      <h2 className="head-text">
+      <h2 className="head-text app__about-heading">
         I know that <span>Good Design</span>
         <br /> means <span>Good Bussiness</span>
       </h2>
@@ -63,6 +70,7 @@ function About() {
           </motion.div>
         ))}
       </div>
+      
     </motion.div>
   );
 }

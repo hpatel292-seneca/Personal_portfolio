@@ -35,6 +35,7 @@ import bolt from '../assets/bolt.png';
 import nb from '../assets/nb.png';
 import skype from '../assets/skype.png';
 import spotify from '../assets/spotify.png';
+import Social_media from '../assets/MERN.png'
 
 const images =  {
   email,
@@ -70,7 +71,8 @@ const images =  {
   nb,
   skype,
   spotify,
-  mongoDB
+  mongoDB,
+  Social_media
 };
 
 export default images;

@@ -86,7 +86,7 @@ function Header() {
   }, []);
 
   return (
-    <div id="home" className="app__header app__flex app__container">
+    <div id="home" className="app__header app__flex app__container component">
       <motion.div
         whileInView={{ x: [0, 0], opacity: [0, 1] }}
         transition={{ duration: 1 }}

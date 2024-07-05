@@ -29,7 +29,7 @@ function Contact() {
         
       };
     return (
-        <motion.div className='app__container app__flex' id='contact'
+        <motion.div className='app__container app__flex component' id='contact'
             whileInView={{ y: [200, 0], opacity: [0, 1] }}
             transition={{ duration: 1 }}
         >

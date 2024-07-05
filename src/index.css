@@ -10,7 +10,7 @@
   --gray-color: #6b7688;
   --brown-color: #46364a;
   --white-color: #ffffff;
-  width: 100%;
+  
 }
 
 
@@ -18,5 +18,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-     scroll-behavior: smooth;
+    scroll-behavior: smooth;
+    font-family: Open Sans,
+      LeagueSpartan;
 }

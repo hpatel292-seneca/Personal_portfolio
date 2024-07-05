@@ -1,71 +1,65 @@
-import React from 'react'
-import "./index.css"
-import "../../app.css"
-import {motion} from 'framer-motion'
-import { images } from '../../constant/index'
-import AppWrap from '../../Higher_order_component/AppWapper'
-// import { NavigationDot, SocialMedia } from '../../components'
+import React from "react";
+import "./index.css";
+import "../../app.css";
+import { motion } from "framer-motion";
+import { images } from "../../constant/index";
+import AppWrap from "../../Higher_order_component/AppWapper";
 
 function Header() {
   return (
-    
-    <div id='home' className='app__header app__flex app__container'>
-        <motion.div
-            className='app__header-info app__flex'
-            whileInView={{x:[-100, 0], opacity:[0 ,1]}}
-            transition={{duration:1}}
-        >
-            <div className='app__badge app__flex'>
-                <div className='app__flex'>
-                    <span className='app__emoji'>👋</span>
-
-                    <div className='p-text' style={{marginLeft: '25px'}}>
-                         <p className='p-text'>Hello, I am</p>
-                        <h1 className='head-text'>Harshil</h1>
-                    </div>
-                
-                </div>
-            </div>
-            <div className='tag-cmp app__flex'>
-                <p className='p-text tag-txt'>Full Stack</p>
-                
-                <p className='p-text tag-txt'>Web Developer</p>
-            </div>
-
-        </motion.div>
-
-        <motion.div
-            className='app__header-img app__flex'
-            whileInView={{ opacity:[0 ,1]}}
-            transition={{duration:1}}
-        >
-            <motion.img 
-            whileInView={{opacity: [0, 1]}}
-             src={images.profile} className="app__profile"></motion.img>
-            <motion.img
-                whileInView={{scale: [0, 1]}}
-                className="app__circle"
-                transition={{duration: 1, ease: "easeInOut"}}
-                src={images.circle}
-            >
-
-            </motion.img>
-        </motion.div>
-
-        <motion.div
-            className='image-cmp app__flex'
-            whileInView={{ opacity:[0 ,1], scale: [0, 1]}}
-            transition={{duration:1}}
-        >
-        {[images.javascript, images.redux, images.sass].map((image, index)=> (
-            <div className="circle-cmp app__flex" key={`circle-${index}`}>
-            <img src={image} alt="profile_bg" className='circle' />
-            </div>
-        ))}
-        </motion.div>
+    <div id="home" className="app__header app__flex app__container">
+      <motion.div
+        whileInView={{ x: [0, 50], opacity: [0, 1] }}
+        transition={{ duration: 1 }}
+        className="d-flex flex-column justify-content-around app__header-profile-div align-items-center"
+      >
+        <motion.img src={images.profile} className="app__profile" />
+        <button type="button" class="btn btn-primary">
+          Resume
+        </button>
+      </motion.div>
+      <motion.div
+        className="app__header-text"
+        whileInView={{ x: [50, 0], opacity: [0, 1] }}
+        transition={{ duration: 1 }}
+      >
+        <h1>
+          Hey! this is Harshil, a Versatile Software Developer and based in
+          Toronto.
+        </h1>
+        <p className="description">
+          I am a young and passionate software developer, with a diverse skill
+          set and a hunger for solving problems.
+        </p>
+        <p className="description">
+          I am in final year of computer science program at Seneca College with
+          3.9 CGPA, where I learnt about Web Development, Cloud Computing,
+          Databases and basic Mobile App Development by not only reading theory,
+          but actually building meaningful projects.
+        </p>
+        <p className="description">
+          I am highly skilled full-stack developer with a robust foundation in
+          computer science and hands-on experience in cloud computing and
+          software development. Proficient in utilizing Azure and AWS for
+          developing scalable solutions, with a proven track record in reducing
+          bug resolution time and enhancing system performance. Certified
+          Microsoft Azure Developer (AZ204) with expertise in C#, Python, and
+          JavaScript, complemented by practical experience in ASP.NET, database
+          management, and creating intuitive user interfaces.
+        </p>
+        <p className="description">
+          A few months ago, I started doing Open-Source, participated in
+          Hacktoberfest 2023 and contributed to various projects on issues
+          ranging from UI to Debugging to Devops.
+        </p>
+        <p className="description">
+          My best experience so far has been working on ChatCraft, an
+          open-source developer oriented AI Chatbot, where I got to work with an
+          incredible team and learn from them.
+        </p>
+      </motion.div>
     </div>
-  )
+  );
 }
 
 export default AppWrap(Header, "home");
-// export default Header;

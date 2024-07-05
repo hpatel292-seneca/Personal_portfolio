@@ -1,43 +1,9 @@
 import React from "react";
 import "./index.css";
 import "../../app.css";
-import { images } from "../../constant";
 import { motion } from "framer-motion";
 // import { SocialMedia } from "../../components";
-import AppWrap from '../../Higher_order_component/AppWapper'
-const Abouts = [
-  {
-    title: "Who Am I?",
-    description:
-      "Hi, I'm Harshil Patel. I am a passionate designer and developer based out of Toronto, Ontario. I love creating appealing web apps that are also responsive, accessible, and logically designed to provide an optimal user experience. Aside from designing and coding, I offer a friendly, honest, respectful, creative personality and I am always looking to learn new technologies and improve with what I already know.",
-    imgURL: images.about04,
-  },
-  {
-    title: "Front-End Developer",
-    description:
-      "I am a front-end developer with a passion for building beautiful and functional web applications. I love to create components and animations as it allows to engage user and it also good for user experience. I am using FramerMotion, material-ui for animation react component.",
-    imgURL: images.about01,
-  },
-  {
-    title: "Open Source Developer",
-    description:
-      "Contributing to Open Source Project is feel like actually contributing to the community. This help me to Improve Coding Skills, Gain Experience working with real software, and to develop a team work skill.",
-    imgURL: images.about02,
-  },
-  {
-    title: "Full Stack Developer",
-    description:
-      "I love to work on end to end on an application. My most used stack is MERN and I am good at Javascript. Working on Full stack, allow me to explore different technologies and packages that out there in market and how those packages can be used",
-    imgURL: images.about03,
-  },
-  {
-    title: "Python Developer",
-    description:
-      "I am using python to make software Applications and also use its library Flask for Web development. Python is very powerful and popular programming language and i found that working in python allow us to develop complex web applications with less and simple code.",
-    imgURL: images.about04,
-  },
-  
-];
+import AppWrap from "../../Higher_order_component/AppWapper";
 function About() {
   return (
     <motion.div
@@ -47,33 +13,62 @@ function About() {
       id="about"
     >
       <h2 className="head-text app__about-heading">
-        I know that <span>Good Design</span>
-        <br /> means <span>Good Bussiness</span>
+        Work <span>Experience</span>
       </h2>
 
       <div className="app__profiles">
-        {Abouts.map((about, index) => (
-          <motion.div
-            whileInView={{ opacity: 1 }}
-            whileHover={{ scale: 1.1 }}
-            transition={{ duration: 0.5 }}
-            className="app__profile-item"
-            key={about.title + index}
-          >
-            <img src={about.imgURL} alt={about.title} />
-            <h2 className="bold-text" style={{ marginTop: 20 }}>
-              {about.title}
-            </h2>
-            <p className="p-text" style={{ marginTop: 10 }}>
-              {about.description}
-            </p>
-          </motion.div>
-        ))}
+        <div className="job">
+          <h3>
+            Software Developer |{" "}
+            <span className="blue">
+              HealthCare of Ontario Pension Plan (HOOPP)
+            </span>
+          </h3>
+          <span className="date">September 2023 – April 2024</span>
+          <ul>
+            <li>
+              Optimized an email notification system by migrating it from a
+              virtual machine (Infrastructure as a Service - <b>IaaS</b>) to
+              Azure cloud services (Platform as a Service - <b>PaaS</b>),
+              leveraging{" "}
+              <b>C#, ASP.NET, CRM, SQL, Azure Durable Functions, Logic Apps</b>,
+              and <b>Blob Storage</b> for improved monitoring, scalability, and
+              efficiency.
+            </li>
+            <li>
+              Developed a front-end application using <b>React</b> for an
+              authentication project, enhancing <b>UI/UX</b> and interface
+              responsiveness.
+            </li>
+            <li>
+              Created and presented a <b>proof of concept (POC)</b> for Azure
+              Monitoring using <b>Application Insights</b> to collect event and
+              error logs, which was approved and implemented,{" "}
+              <b>reducing bug detection</b>, and resolution time by 50%;
+              provided detailed documentation and <b>knowledge transfer</b> to
+              other teams.
+            </li>
+            <li>
+              Developed and implemented email templates using{" "}
+              <b>HTML, CSS, and JavaScript</b>, tailored to{" "}
+              <b>business requirements</b>, facilitating daily notifications to
+              10,000 users, and enhancing communication and{" "}
+              <b>user engagement</b>.
+            </li>
+            <li>
+              Developed and maintained <b>CI/CD</b> pipelines for automated
+              deployments and <b>PowerShell scripts</b> for task automation.
+            </li>
+            <li>
+              Utilized <b>Docker, Azure DevOps, ServiceNow, and Azure Portal </b>
+              for deployment and day-to-day tasks, following Agile
+              methodologies.
+            </li>
+          </ul>
+        </div>
       </div>
-      
     </motion.div>
   );
 }
 
 export default AppWrap(About, "about");
-

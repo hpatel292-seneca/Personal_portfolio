@@ -5,6 +5,17 @@
   align-items: center;
   padding: 2rem 4rem;
 }
+@media screen and (max-width: 1200px) {
+  .app__header {
+    flex-direction: column !important;
+    margin-top: 40px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .app__header {
+    font-size: 0.8em !important;
+  }
+}
 
 .app__header-info {
   flex: 1;
@@ -48,7 +59,20 @@
 }
 
 .app__header-text {
-  width: 55%;
+  width: 50%;
+}
+.app__header-text .title {
+  font-weight: 600;
+}
+@media screen and (max-width: 1200px) {
+  .app__header-text {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .app__header-text {
+    width: 100%;
+  }
 }
 
 .app__profile {
@@ -89,4 +113,13 @@
   width: -moz-fit-content;
   width: fit-content;
   background: #313bac;
+}
+
+.blue {
+  color: #313bac;
+}
+
+.font-medium {
+  font-weight: 500;
+  font-size: 1.1em;
 }/*# sourceMappingURL=index.css.map */

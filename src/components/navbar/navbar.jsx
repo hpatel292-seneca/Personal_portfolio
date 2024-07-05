@@ -13,14 +13,20 @@ function Navbar() {
       </div>
 
       <ul className="app__navlink">
-        {["Home", "About", "Work", "Skill", "Contact"].map((element) => (
-          <li className="app__navlink-li" id={`${element}`} key={`${element}`}>
-            <div />
-            <a href={`#${element.toLowerCase()}`} id={`link-${element}`}>
-              {element}
-            </a>
-          </li>
-        ))}
+        {["Home", "Experience", "Projects", "Skill", "Contact"].map(
+          (element) => (
+            <li
+              className="app__navlink-li"
+              id={`${element}`}
+              key={`${element}`}
+            >
+              <div />
+              <a href={`#${element.toLowerCase()}`} id={`link-${element}`}>
+                {element}
+              </a>
+            </li>
+          )
+        )}
       </ul>
       <div className="app__navbar-menu">
         <HiMenuAlt4 onClick={() => setToggle(true)} />
@@ -32,13 +38,15 @@ function Navbar() {
           >
             <HiX onClick={() => setToggle(false)} />
             <ul>
-              {["home", "about", "work", "skills", "contact"].map((item) => (
-                <li key={item}>
-                  <a href={`#${item}`} onClick={() => setToggle(false)}>
-                    {item}
-                  </a>
-                </li>
-              ))}
+              {["home", "Experience", "Projects", "skills", "contact"].map(
+                (item) => (
+                  <li key={item}>
+                    <a href={`#${item}`} onClick={() => setToggle(false)}>
+                      {item}
+                    </a>
+                  </li>
+                )
+              )}
             </ul>
           </motion.div>
         )}

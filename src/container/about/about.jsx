@@ -4,13 +4,13 @@ import "../../app.css";
 import { motion } from "framer-motion";
 // import { SocialMedia } from "../../components";
 import AppWrap from "../../Higher_order_component/AppWapper";
-function About() {
+function Experience() {
   return (
     <motion.div
       whileInView={{ y: [150, 0], opacity: [0, 1] }}
       transition={{ duration: 1.5 }}
-      className="app__about app__container About"
-      id="about"
+      className="app__about app__container experience"
+      id="experience"
     >
       <h2 className="head-text app__about-heading">
         Work <span>Experience</span>
@@ -60,7 +60,8 @@ function About() {
               deployments and <b>PowerShell scripts</b> for task automation.
             </li>
             <li>
-              Utilized <b>Docker, Azure DevOps, ServiceNow, and Azure Portal </b>
+              Utilized{" "}
+              <b>Docker, Azure DevOps, ServiceNow, and Azure Portal </b>
               for deployment and day-to-day tasks, following Agile
               methodologies.
             </li>
@@ -71,4 +72,4 @@ function About() {
   );
 }
 
-export default AppWrap(About, "about");
+export default AppWrap(Experience, "experience");

@@ -3,7 +3,7 @@
   text-align: center;
 }
 
-#work {
+#projects {
   padding: 6rem 0 2rem;
   flex-direction: column;
   background-color: rgb(237, 242, 248);
@@ -71,7 +71,7 @@
 .app__work-content .app__work-item {
   flex-direction: column;
   width: 280px;
-  height: 330px;
+  height: 400px;
   position: relative;
   margin: 30px;
   margin-top: 10px;

@@ -53,6 +53,13 @@ hr {
   border-radius: 50%;
   font-size: x-large;
 }
+@media screen and (max-width: 550px) {
+  .app__skill .app__skill-icons .app__skills-icon p {
+    width: 50px;
+    height: 50px;
+    font-size: small;
+  }
+}
 
 .app__skill-content {
   display: flex;
@@ -125,6 +132,11 @@ hr {
 .icon_text {
   color: black !important;
   text-decoration: none !important;
+}
+@media screen and (max-width: 500px) {
+  .icon_text {
+    font-size: smaller;
+  }
 }
 
 a:link {

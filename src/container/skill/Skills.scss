@@ -52,6 +52,11 @@ hr {
         // color: white;
         // top: 60px;
         // left: 60px;
+        @media screen and (max-width: 550px) {
+          width: 50px;
+          height: 50px;
+          font-size: small;
+        }
       }
     }
   }
@@ -124,6 +129,9 @@ hr {
 .icon_text {
   color: black !important;
   text-decoration: none !important;
+  @media screen and (max-width: 500px) {
+    font-size: smaller;
+  }
 }
 a:link {
   text-decoration: none;

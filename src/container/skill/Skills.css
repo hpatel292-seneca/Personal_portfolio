@@ -124,4 +124,9 @@ hr {
 
 .icon_text {
   color: black !important;
+  text-decoration: none !important;
+}
+
+a:link {
+  text-decoration: none;
 }/*# sourceMappingURL=Skills.css.map */

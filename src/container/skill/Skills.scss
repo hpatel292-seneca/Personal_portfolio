@@ -123,6 +123,10 @@ hr {
 
 .icon_text {
   color: black !important;
+  text-decoration: none !important;
+}
+a:link {
+  text-decoration: none;
 }
 
 // .app__skills-icon span {

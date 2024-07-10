@@ -85,56 +85,121 @@ import { motion } from "framer-motion";
 import { images } from "../../constant";
 
 function Skills() {
-  const imgMotion = {
-    rest: { scale: 1 },
-    hover: {
-      scale: 1.5,
-    },
-  };
-
-  const spanMotion = {
-    rest: { opacity: 0 },
-    hover: {
-      opacity: 1,
-    },
-  };
-
   const skills = {
     "Front-End Development": [
-      { img: images.html, name: "HTML" },
-      { img: images.css, name: "CSS" },
-      { img: images.javascript, name: "JavaScript" },
-      { img: images.typescript, name: "TypeScript" },
-      { img: images.angular, name: "Angular" },
-      { img: images.react, name: "React" },
-      { img: images.sass, name: "Sass" },
-      { img: images.tailwindcss, name: "TailwindCSS" },
-      { img: images.rxjs, name: "RxJS" },
-      { img: images.nextjs, name: "Next.js" },
+      {
+        img: images.html,
+        name: "HTML",
+        link: "https://developer.mozilla.org/en-US/docs/Web/HTML",
+      },
+      {
+        img: images.css,
+        name: "CSS",
+        link: "https://developer.mozilla.org/en-US/docs/Web/CSS",
+      },
+      {
+        img: images.javascript,
+        name: "JavaScript",
+        link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+      },
+      {
+        img: images.typescript,
+        name: "TypeScript",
+        link: "https://www.typescriptlang.org/",
+      },
+      { img: images.react, name: "React", link: "https://reactjs.org/" },
+      { img: images.sass, name: "Sass", link: "https://sass-lang.com/" },
+      {
+        img: images.tailwind,
+        name: "TailwindCSS",
+        link: "https://tailwindcss.com/",
+      },
+      { img: images.nextjs, name: "Next.js", link: "https://nextjs.org/" },
     ],
     "Back-End Development": [
-      { img: images.node, name: "Node.js" },
-      { img: images.express, name: "Express.js" },
-      { img: images.aspnet, name: "ASP.NET" },
-      { img: images.oracledb, name: "OracleDB" },
-      { img: images.mysql, name: "MySQL" },
-      { img: images.postgresql, name: "PostgresSQL" },
-      { img: images.sqlite, name: "SQLite" },
-      { img: images.mongodb, name: "MongoDB" },
-      { img: images.dynamodb, name: "DynamoDB" },
-      { img: images.pnpm, name: "PNPM" },
+      { img: images.node, name: "Node.js", link: "https://nodejs.org/" },
+      {
+        img: images.expressjs,
+        name: "Express.js",
+        link: "https://expressjs.com/",
+      },
+      {
+        img: images.aspnet,
+        name: "ASP.NET",
+        link: "https://dotnet.microsoft.com/apps/aspnet",
+      },
+      {
+        img: images.flask,
+        name: "Flask",
+        link: "https://flask.palletsprojects.com/en/3.0.x/",
+      },
+      {
+        img: images.oracle,
+        name: "OracleDB",
+        link: "https://www.oracle.com/database/",
+      },
+      { img: images.mysql, name: "MySQL", link: "https://www.mysql.com/" },
+      {
+        img: images.postgresql,
+        name: "PostgresSQL",
+        link: "https://www.postgresql.org/",
+      },
+      {
+        img: images.sqlite,
+        name: "SQLite",
+        link: "https://www.sqlite.org/index.html",
+      },
+      {
+        img: images.mongodb,
+        name: "MongoDB",
+        link: "https://www.mongodb.com/",
+      },
+      {
+        img: images.dynamodb,
+        name: "DynamoDB",
+        link: "https://aws.amazon.com/dynamodb/",
+      },
     ],
     "Cloud Computing": [
-      { img: images.aws, name: "AWS" },
-      { img: images.azure, name: "Azure" },
-      { img: images.googlecloud, name: "Google Cloud" },
-      { img: images.githubactions, name: "Github Actions" },
-      { img: images.docker, name: "Docker" },
-      { img: images.nginx, name: "Nginx" },
-      { img: images.firebase, name: "Firebase" },
-      { img: images.linux, name: "Linux" },
-      { img: images.yaml, name: "YAML" },
-      { img: images.cloudflare, name: "Cloudflare Workers" },
+      {
+        img: images.azure,
+        name: "Azure",
+        link: "https://azure.microsoft.com/",
+      },
+      { img: images.aws, name: "AWS", link: "https://aws.amazon.com/" },
+      {
+        img: images.googlecloud,
+        name: "Google Cloud",
+        link: "https://cloud.google.com/",
+      },
+      {
+        img: images.githubactions,
+        name: "GitHub Actions",
+        link: "https://github.com/features/actions",
+      },
+      { img: images.docker, name: "Docker", link: "https://www.docker.com/" },
+      { img: images.nginx, name: "Nginx", link: "https://www.nginx.com/" },
+      {
+        img: images.firebase,
+        name: "Firebase",
+        link: "https://firebase.google.com/",
+      },
+      { img: images.linux, name: "Linux", link: "https://www.linux.org/" },
+      { img: images.yaml, name: "YAML", link: "https://yaml.org/" },
+    ],
+    "Object Oriented Programming": [
+      { img: images.cpp, name: "C++", link: "https://isocpp.org/" },
+      { img: images.python, name: "Python", link: "https://www.python.org/" },
+      { img: images.java, name: "Java", link: "https://www.java.com/" },
+    ],
+    "Collaboration and DevOps": [
+      { img: images.git, name: "Git", link: "https://git-scm.com/" },
+      { img: images.github, name: "GitHub", link: "https://github.com/" },
+      {
+        img: images.azuredevops,
+        name: "Azure DevOps",
+        link: "https://azure.microsoft.com/en-us/services/devops/",
+      },
     ],
   };
 
@@ -170,13 +235,17 @@ function Skills() {
                   whileHover="hover"
                   className="app__skills-icon app__flex d-flex flex-column"
                 >
-                  <motion.img
-                    // variants={imgMotion}
-                    src={skill.img}
-                    alt={skill.name}
-                    className="app__skills-item app__flex"
-                  />
-                  <p className="icon_text">{skill.name}</p>
+                  <a href={skill.link}>
+                    <motion.img
+                      // variants={imgMotion}
+                      src={skill.img}
+                      alt={skill.name}
+                      className="app__skills-item app__flex"
+                    />
+                    <p className="icon_text d-flex justify-content-center">
+                      {skill.name}
+                    </p>
+                  </a>
                 </motion.div>
               ))}
             </motion.div>

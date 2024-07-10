@@ -3,6 +3,10 @@
   background-color: white;
 }
 
+hr {
+  width: 80%;
+}
+
 .app__skill {
   display: flex;
   width: 100%;
@@ -15,8 +19,6 @@
   width: 100%;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-top: 5rem;
-  padding: 3rem;
 }
 @media screen and (max-width: 550px) {
   .app__skill .app__skill-icons {
@@ -26,7 +28,6 @@
 .app__skill .app__skill-icons .app__skills-icon {
   width: 120px;
   height: 120px;
-  background-color: rgba(0, 0, 0, 0.233);
   margin: 1rem;
   border-radius: 50%;
 }
@@ -47,13 +48,10 @@
   }
 }
 .app__skill .app__skill-icons .app__skills-icon p {
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0.205);
   width: inherit;
   height: inherit;
   border-radius: 50%;
-  font-size: xx-large;
-  color: white;
+  font-size: x-large;
 }
 
 .app__skill-content {
@@ -97,4 +95,33 @@
 }
 .app__skill-content .app__skill-Education div .title-edu {
   flex: 1.5;
+}
+
+.app__skill-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.skill-category {
+  margin-bottom: 2rem;
+}
+
+.app__skill-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.app__skills-icon {
+  margin: 1rem;
+  position: relative;
+}
+
+.app__skills-item {
+  width: 60px;
+  height: 60px;
+}
+
+.icon_text {
+  color: black !important;
 }/*# sourceMappingURL=Skills.css.map */

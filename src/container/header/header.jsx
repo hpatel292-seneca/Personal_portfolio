@@ -93,7 +93,7 @@ function Header() {
         className="d-flex flex-column justify-content-around app__header-profile-div align-items-center"
       >
         <motion.img src={images.profile} className="app__profile" />
-        <a href="https://www.linkedin.com/in/harshil-patel26/overlay/1720630348218/single-media-viewer/?profileId=ACoAADcrV4MB8JUYn38QWxPLQ77uYMjigoiYlZA">
+        <a href="https://iamharshilpatel.netlify.app/docs/Resume.pdf">
           <button type="button" class="btn btn-primary">
             Resume &nbsp;
             <i class="fa-solid fa-arrow-up-right-from-square"></i>

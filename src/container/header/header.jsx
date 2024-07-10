@@ -93,10 +93,12 @@ function Header() {
         className="d-flex flex-column justify-content-around app__header-profile-div align-items-center"
       >
         <motion.img src={images.profile} className="app__profile" />
-        <button type="button" class="btn btn-primary">
-          Resume &nbsp;
-          <i class="fa-solid fa-arrow-up-right-from-square"></i>
-        </button>
+        <a href="https://www.linkedin.com/in/harshil-patel26/overlay/1720630348218/single-media-viewer/?profileId=ACoAADcrV4MB8JUYn38QWxPLQ77uYMjigoiYlZA">
+          <button type="button" class="btn btn-primary">
+            Resume &nbsp;
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </button>
+        </a>
       </motion.div>
       <motion.div
         className="app__header-text"

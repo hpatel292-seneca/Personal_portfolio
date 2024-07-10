@@ -36,7 +36,7 @@ function Skills() {
   {img: images.typescript, name: "TypeScript"},]
   return (
     <motion.div
-      className='app__skill app__flex app__container' id='skill'
+      className='app__skill app__flex app__container component' id='skill'
       whileInView={{y: [150, 0], opacity: [0, 1]}}
       transition={{duration: 1}}
     >

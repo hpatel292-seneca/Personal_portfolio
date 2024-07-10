@@ -25,7 +25,7 @@ function Work() {
   const selectedData = data[selectedIndex].content;
 
   return (
-    <div id="projects" className="app__work App app__container">
+    <div id="projects" className="app__work App app__container component">
       <h2 className="head-text">
         My Creative <span>Portfolio</span> Section
       </h2>

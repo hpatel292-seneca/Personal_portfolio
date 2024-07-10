@@ -9,7 +9,7 @@ function Experience() {
     <motion.div
       whileInView={{ y: [150, 0], opacity: [0, 1] }}
       transition={{ duration: 1.5 }}
-      className="app__about app__container experience"
+      className="app__about app__container experience component"
       id="experience"
     >
       <h2 className="head-text app__about-heading">

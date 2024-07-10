@@ -211,7 +211,9 @@ function Skills() {
       transition={{ duration: 1 }}
     >
       <h2 className="head-text">Skills</h2>
-      <h4 className="blue fw-bolder">
+      <h4
+        className="blue fw-bolder head-subtext"
+      >
         What I have learnt from my Education and work experience
       </h4>
       <hr className="my-4" />

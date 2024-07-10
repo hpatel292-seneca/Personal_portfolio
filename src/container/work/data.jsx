@@ -62,14 +62,14 @@ const data = [
       {
         title: "CS50 Finance",
         text: "This a full stack web Application made using Flask, and jinja",
-        imgURL: images.about04,
+        imgURL: images.finance,
         github: "https://github.com/hpatel292-seneca/Finance",
         tag: "Flask",
       },
       {
         title: "BlackJack_House",
         text: "This a game application coded in Python.",
-        imgURL: images.about03,
+        imgURL: images.blackJack,
         github: "https://github.com/hpatel292-seneca/BlackJack_House",
         live_site:
           "https://replit.com/@HarshilPatel48/blackjack-start-1#main.py",

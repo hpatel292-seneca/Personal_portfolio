@@ -41,8 +41,12 @@ import fragment from "../assets/fragment.png";
 import simon from "../assets/simon.png";
 import portfolio from "../assets/portfolio.png";
 import styleMate from "../assets/styleMate.png";
+import finance from "../assets/finance.png";
+import blackJack from "../assets/blackJack.png";
 
 const images = {
+  blackJack,
+  finance,
   styleMate,
   portfolio,
   simon,

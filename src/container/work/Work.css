@@ -79,13 +79,13 @@
   border-radius: 10px;
 }
 .app__work-content .app__work-item .app__work-img > img {
-  width: 80%;
+  width: 95%;
   height: 200px;
   border-radius: 15px;
   position: relative;
 }
 .app__work-content .app__work-item .app__work-img .app__work-hover {
-  width: 77%;
+  width: 95%;
   height: 200px;
   border-radius: 15px;
   position: absolute;

@@ -7,7 +7,7 @@ const data = [
       {
         title: "Nest Rental",
         text: "Full stack web application designed for managing rental properties",
-        imgURL: images.Social_media,
+        imgURL: images.nestRental,
         github: "https://github.com/hpatel292-seneca/Nest-Rental",
         live_site: "https://nest-rental.vercel.app/",
         tag: "NodeJS/hbs",
@@ -15,8 +15,8 @@ const data = [
       {
         title: "Fragments",
         text: "Cloud-based microservices",
-        imgURL: images.Social_media,
-        github: "https://github.com/hpatel292-seneca/fragments",
+        imgURL: images.fragment,
+        // github: "https://github.com/hpatel292-seneca/fragments",
         tag: "AWS/NodeJS",
       },
       {
@@ -27,17 +27,9 @@ const data = [
         tag: "MERN stack",
       },
       {
-        title: "Bloging Website",
-        text: "This a web application i have made using MongoDB, and Templating ejx",
-        imgURL: images.about02,
-        github: "https://github.com/",
-        live_site: "https://github.com/",
-        tag: "Backend",
-      },
-      {
         title: "Simon Game",
         text: "This is a memory game called Simon, i have made it using JQuery.",
-        imgURL: images.about03,
+        imgURL: images.simon,
         github: "https://github.com/hpatel292-seneca/Simon_Game",
         live_site: "https://extraordinary-seahorse-a47368.netlify.app/",
         tag: "Front-end",
@@ -45,7 +37,7 @@ const data = [
       {
         title: "Portfolio Website",
         text: "This a web application i have made using react.js with Framer Motion for animation",
-        imgURL: images.about02,
+        imgURL: images.portfolio,
         github: "https://github.com/hpatel292-seneca/Personal_portfolio",
         live_site: "https://iamharshilpatel.netlify.app/",
         tag: "This Website",
@@ -58,7 +50,7 @@ const data = [
       {
         title: "StyleMate",
         text: "ASP.NET with Razor pages that suggest matching cloths",
-        imgURL: images.Social_media,
+        imgURL: images.styleMate,
         github: "https://github.com/hpatel292-seneca/StyleMate",
         tag: "ASP.NET",
       },

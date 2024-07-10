@@ -36,8 +36,18 @@ import nb from "../assets/nb.png";
 import skype from "../assets/skype.png";
 import spotify from "../assets/spotify.png";
 import Social_media from "../assets/MERN.png";
+import nestRental from "../assets/nestRental.png";
+import fragment from "../assets/fragment.png";
+import simon from "../assets/simon.png";
+import portfolio from "../assets/portfolio.png";
+import styleMate from "../assets/styleMate.png";
 
 const images = {
+  styleMate,
+  portfolio,
+  simon,
+  fragment,
+  nestRental,
   email,
   mobile,
   api,
